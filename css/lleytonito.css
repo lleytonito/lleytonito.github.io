@@ -127,8 +127,6 @@ header.sticky ul li a {
   width: 10%;
 }
 
-/* ... Your existing CSS ... */
-
 /* Add styles for the menu icon */
 .menu-icon {
   display: none;
@@ -287,6 +285,48 @@ header.sticky ul li a {
 }
 .download-button a:hover {
   transform: scale(1.2) !important;
+}
+
+@media screen and (max-width: 500px) {
+  header,
+  header.sticky {
+    padding: 15px 50px; /* Adjust padding for smaller screens */
+  }
+  .menu-icon {
+    margin-right: 10px; /* Adjust margin for the icon on smaller screens */
+  }
+  .logo {
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+  header ul li a {
+    font-size: 1.35em;
+    line-height: 1.5;
+  }
+  .title p,
+  .subtitle,
+  .title,
+  .subtitle a {
+    text-align: center; /* Center-justify the text on screens 500px or less */
+  }
+  .title span {
+    font-size: 70px;
+  }
+  .title {
+    top: 100px;
+  }
+  .subtitle {
+    top: 200px;
+  }
+
+  .download-button a {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .subtitle a {
+    font-size: 15px;
+  }
 }
 
 .experienceOffset {
@@ -620,5 +660,8 @@ form button:hover {
   }
   .inner-container {
     padding: 60px;
+  }
+  .skills {
+    visibility: hidden;
   }
 }
