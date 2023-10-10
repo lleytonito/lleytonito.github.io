@@ -55,6 +55,7 @@ header.sticky {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
+  margin-top: 1px;
 }
 
 header .logo {
