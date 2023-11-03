@@ -308,6 +308,11 @@ header.sticky ul li a {
   .title,
   .subtitle a {
     text-align: center; /* Center-justify the text on screens 500px or less */
+    right: 40px;
+  }
+
+  .subtitle a {
+    letter-spacing: 3px;
   }
   .title span {
     font-size: 70px;
@@ -632,6 +637,12 @@ form button:hover {
   margin-bottom: 40px;
 }
 
+.profile-photo {
+  display: none; /* Initially hide the image */
+  max-width: 100; /* Ensure the image does not exceed its container's width */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
 .skills {
   display: flex;
   justify-content: space-between;
@@ -664,5 +675,10 @@ form button:hover {
   }
   .skills {
     visibility: hidden;
+  }
+  .profile-photo {
+    display: block;
+    width: 70%;
+    margin-bottom: 40px;
   }
 }
